@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="/assets/styles/stylesIndex.css">
+    <link rel="shortcut icon" href="/assets/imges/ico_welcome.ico" />
+    
+</head>
+
+<body>
+    <div id="particles-js">
+
+    </div>
+    <header>
+        <div class="overlay">
+    <h1>EL buen Café</h1>
+    <p>El café es una bebida, en realidad una infusión, muy popular que se obtiene de la semilla de un arbusto denominado Cafeto. Esta semilla es primero tostada y después molida para obtener una molienda de café más o menos fina que se utiliza para la elaboración de la bebida.</p>
+        <br>
+        <button type="button" class="button" onclick="salir()">
+            <div class="button-top">Salir</div>
+            <div class="button-bottom"></div>
+            <div class="button-base"></div>
+          </button>
+            </div>
+    </header>
+    
+    <div class="container">
+        <article>
+            <h2>¿En que ayuda el café?</h2>
+            <p>
+                El café es un producto rico en compuestos antioxidantes, especialmente en polifenoles que actúan contra
+                los
+                radicales libres y algunos metales pesados que provocan el envejecimiento de los tejidos y ayudan a
+                prevenir
+                enfermedades, siendo éste uno de los principales beneficios de tomar café.
+            </p>
+            <img src="/assets/imges/cafeee.png" alt="cafe-vida">
+            <img src="/assets/imges/esta si.png" alt="tasa de café">
+            <div class="content">
+                <div class="card">
+                    <h3>El buen café</h3>
+                    <img src="/assets/imges/siembra.jpg" alt="seimpre">
+                    <p> Al mismo tiempo que nos beneficia porque nos mantiene alerta, despiertos y nos ayuda a elevar el
+                        estado de ánimo </p>
+                </div>
+                <div class="card2">
+                    <h3>Café</h3>
+                    <img src="/assets/imges/molida.jpg" alt="molida">
+                    <p> El café es originario de Etiopía donde en el siglo XI se encontraron los primeros cafetos, el
+                        árbol
+                        del café, y se descubrieron las propiedades de las semillas encerradas en su fruto. </p>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <ul>
+                <h3> Tiendas online</h3>
+                <a href="https://puntadelcielo.com.mx/">☕ Punta del cielo</a>
+                <a href="https://grancafedelaparroquia.com/tienda/">☕ EL auténtico</a>
+                <a href="https://tuestecafe.mx/products">☕Tueste café</a>
+                <a href="https://www.boladeoro.com.mx/tienda-en-linea-cafe-molido-y-en-grano/">☕Bola de Oro</a>
+            </ul>
+        </aside>
+    </div>
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Café</h3>
+
+            <p class="footer-links">
+                <a href="https://www.utpuebla.edu.mx/">Universidad</a>
+
+                <a href="#">Sobre mi</a>
+
+                <a href="#">Contacto</a>
+            </p>
+
+            <p class="footer-company-name">Code-cafe 2024</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Antiguo Camino a la Resurrección No.1002-A</span> Zona Industrial Puebla Oriente, Pue.</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+52 249-104-67-89</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:geradmtz638@gmail.com">geradmtz638@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>Sobre el equipo</span>
+                Somo un equipo con eficencia para crear app web asi como site web, somo jovenes
+                que quieren sobre salir de esta carrera.
+            </p>
+            <a href="https://www.facebook.com/gera.merchant/">
+                <button class="Btn">
+                    <span class="svgContainer">
+                        <svg viewBox="0 0 320 512" height="1.3em" xmlns="http://www.w3.org/2000/svg" class="svgIcon"
+                            fill="white">
+                            <path
+                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="BG"></span>
+                </button>
+            </a>
+
+
+        </div>
+
+    </footer>
+    <script>
+        function salir() {
+            window.location.href = "/logout"; // Redireccionar al logout al hacer clic en Salir
+        }
+    </script>
+    <script>
+        // Deshabilitar el botón de retroceso del navegador
+        history.pushState(null, null, location.href)
+        window.onpopstate = function () {
+            history.go(1)
+        };
+    </script>
+
+</body>
+
+</html>
